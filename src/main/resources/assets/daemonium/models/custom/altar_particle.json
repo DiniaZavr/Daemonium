@@ -1,0 +1,7 @@
+
+{
+  "parent": "daemonium:displaysettings/altar.item",
+  "textures": {
+    "particle": "daemonium:blocks/altartexture"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "mod_elements": [
+    {
+      "name": "DemonicScythe",
+      "type": "animateditem",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonic_scythe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/daemonium/models/item/demonic_scythe.json",
+          "src/main/java/net/mcreator/daemonium/item/DemonicScytheItem.java",
+          "src/main/java/net/mcreator/daemonium/item/model/DemonicScytheItemModel.java",
+          "src/main/java/net/mcreator/daemonium/item/renderer/DemonicScytheItemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Skill1",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/network/Skill1Message.java"
+        ]
+      }
+    },
+    {
+      "name": "Skill1OnKeyPressed",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_1_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/Skill1OnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skill1OnKeyReleased",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_1_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/Skill1OnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DSsummon",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_ssummon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/DSsummonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DemonicScytheEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonic_scythe_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/DemonicScytheEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DemonicScytheEntitySwingsItemP",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonic_scythe_entity_swings_item_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/DemonicScytheEntitySwingsItemPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Altar",
+      "type": "animatedblock",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/block/model/AltarDisplayModel.java",
+          "src/main/java/net/mcreator/daemonium/block/AltarBlock.java",
+          "src/main/java/net/mcreator/daemonium/block/renderer/AltarDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/daemonium/block/display/AltarDisplayItem.java",
+          "src/main/resources/assets/daemonium/blockstates/altar.json",
+          "src/main/java/net/mcreator/daemonium/block/model/AltarBlockModel.java",
+          "src/main/resources/assets/daemonium/models/custom/altar_particle.json",
+          "src/main/java/net/mcreator/daemonium/block/entity/AltarTileEntity.java",
+          "src/main/java/net/mcreator/daemonium/block/renderer/AltarTileRenderer.java",
+          "src/main/resources/assets/daemonium/models/item/altar.json"
+        ]
+      },
+      "path": "~/rituals"
+    },
+    {
+      "name": "AltarUpdateTick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/AltarUpdateTickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/rituals"
+    },
+    {
+      "name": "AltarOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/daemonium/procedures/AltarOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/rituals"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "skill1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "key.daemonium.skill_1": "Skill 1",
+      "block.daemonium.altar": "Altar",
+      "item.daemonium.demonic_scythe": "Demonic Scythe"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "rituals",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "daemonium",
+    "modName": "Daemonium",
+    "version": "1.0.0",
+    "author": "RDA, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "mcreator_link",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.daemonium",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

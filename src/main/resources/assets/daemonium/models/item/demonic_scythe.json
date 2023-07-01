@@ -1,0 +1,6 @@
+{
+  "parent": "daemonium:displaysettings/demon_weapon.item",
+  "textures": {
+    "layer0": "daemonium:items/texture_1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "daemonium:custom/altar_particle"
+    }
+  }
+}
